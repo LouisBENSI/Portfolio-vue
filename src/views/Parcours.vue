@@ -31,28 +31,28 @@ export default {
               company: "Bemove",
               date_start: "Septembre 2021",
               date_fin: "?",
-              description: "Poursuite des projets, + d'indépendance et de confiance en mon travail, nouvelles technos comme NuxtJS, vue"
+              description: "Cette signature en CDI est une poursuite des projets menés durant mon alternance, + de responsabilité et une montée en compétence dans le front-end."
             },
             {
               title: "Alternance dévelopement front-end",
               company: "Bemove",
               date_start: "Septembre 2020",
               date_fin: "Septembre 2021",
-              description: "Alternance où j'ai pu poursuivre les projets de l'entreprise avec de plus grande responsabilité"
+              description: "Le stage s'étant bien passé, Bemove a décidé de me prendre en alternance, j'ai pu monté en compétence et en responsabilité malgré le contexte sanitaire."
             },
             {
               title: "Stage Intégration HTML/CSS",
               company: "Bemove",
               date_start: "Juin 2020",
               date_fin: "Septembre 2020",
-              description: "Mon deuxième stage où j'ai pu expérimenté de nouvelles techno comme TailwindCSS, JQUERY, GIT et symfony"
+              description: "Ce deuxième stage dans une PME m'a permis d'intégrer une équipe et un environnement complètement nouveau, j'ai pu faire mes premières armes sur GIT, symfony et Tailwind CSS."
             },
             {
               title: "Stage développement FullStack",
               company: "green_e",
               date_start: "Avril 2019",
               date_fin: "Juillet 2019",
-              description: "Mon premier stage où j'ai pu crée pour la fois un site Internet utilisant du HTML, SCSS, JS et du PHP"
+              description: "Mon tout premier et ma première expérience professionnelle ! J'ai pu mené (tout seul) un projet web de A à Z du maquettage au développement web sous PHP, HTML, CSS et SQL."
             },
           ]
         },
@@ -78,7 +78,7 @@ export default {
               company: "Moi-même",
               date_start: "Septembre 2019",
               date_fin: "Aujourd'hui",
-              description: "Durant ma carrière dans le développement web j'ai fait évoluer ce portfolio, d'abord en PHP classique puis symfony puis en VUEJS"
+              description: "Durant ma carrière dans le développement web j'ai fait évoluer ce portfolio, d'abord en PHP classique puis Symfony puis en VUEJS"
             },
           ]
         },
@@ -90,7 +90,7 @@ export default {
               company: "Digital Campus",
               date_start: "Septembre 2018",
               date_fin: "Juillet 2021",
-              description: "Depuis 2020, je consacre mon temps à l'apprentissage de nouvelles technologies liées au front-end"
+              description: "Depuis 2020, je consacre mon temps à l'apprentissage de nouvelles technologies liées au front-end et un peu au Back-end pour toujours rester dans les tendances."
             },
             {
               title: "Formation Chef de projet Digital",

@@ -1,13 +1,15 @@
 <template>
   <Header/>
-  <main class="max-w-[1280px] w-full h-screen mx-auto px-4 pt-4 lg:pt-8 xl:px-0">
+  <main class="max-w-[1280px] w-full mx-auto px-4 pt-4 lg:pt-8 xl:px-0">
     <router-view/>
   </main>
+  <DownPage/>
 </template>
 
 <script setup>
 import Header from "./components/Header.vue";
-import Footer from "./components/Footer.vue";
+import DownPage from "./components/DownPage.vue";
+
 </script>
 
 <style>

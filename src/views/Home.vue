@@ -1,4 +1,5 @@
 <template>
+  <Dots/>
   <section class="md:flex md:items-center">
     <div class="relative z-20 space-y-6 md:w-7/12">
       <h1 class="text-3xl text-secondary font-bold md:text-[45px] lg:font-extrabold">Bonjour !</h1>
@@ -120,8 +121,10 @@
 </template>
 
 <script>
+import Dots from "../components/Dots.vue";
 export default {
   name: 'Home',
+  components: {Dots},
 }
 </script>
 
