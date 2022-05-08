@@ -1,6 +1,11 @@
+// Composants vue
 import {createApp} from 'vue'
 import {createRouter, createWebHistory} from 'vue-router'
+
+// CSS
 import '/src/assets/css/style.css'
+
+// Pages
 import App from './App.vue'
 import Home from "./views/Home.vue"
 import Contact from "./views/Contact.vue"
@@ -9,6 +14,10 @@ import Competences from "./views/Competences.vue"
 import Parcours from "./views/Parcours.vue"
 import MentionsLegales from "./views/Mentions.vue"
 
+// Email
+import {store} from "@emailjs/browser/es/store/store";
+
+// Routes
 const routes = [
     { path : '/', name : 'Home', component : Home },
     { path : '/creations', name : 'Creations', component : Creations },
@@ -22,7 +31,6 @@ const router = createRouter({
     history: createWebHistory(),
     routes
 })
-
 
 createApp(App)
     .use(router)

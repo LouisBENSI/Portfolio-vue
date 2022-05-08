@@ -1,5 +1,4 @@
 <template>
-  <Dots/>
   <section class="md:flex md:items-center">
     <div class="relative z-20 space-y-6 md:w-7/12">
       <h1 class="text-3xl text-secondary font-bold md:text-[45px] lg:font-extrabold">Bonjour !</h1>
@@ -10,7 +9,7 @@
             <span class="relative z-50">Mes projets</span>
           </router-link>
 
-          <router-link to="/Contact" type="button" class="hero_buttons relative flex items-center justify-center bg-primary text-white font-bold overflow-hidden max-w-[320px] h-[40px] w-full mx-auto mt-4 rounded-md md:max-w-[250px] md:mx-0 lg:max-w-[300px] lg:h-[50px] lg:text-xl lg:mt-0">
+          <router-link to="/Contact" type="button" class="relative flex items-center justify-center border border-primary text-primary font-bold overflow-hidden max-w-[320px] h-[40px] w-full mx-auto mt-4 rounded-md md:max-w-[250px] md:mx-0 lg:max-w-[300px] lg:h-[50px] lg:text-xl lg:mt-0">
             <span class="relative z-50">Me contacter</span>
           </router-link>
       </div>

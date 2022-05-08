@@ -6,34 +6,19 @@
       <div class="space-y-4 md:col-span-3">
         <div class="relative border border-blue-100 rounded-md flex items-start p-2">
           <div class="flex items-center h-5">
-            <input id="symfony" aria-describedby="comments-description" name="comments" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"/>
+            <input v-model="persoCheck" id="persoCheck" value="persoCheck" aria-describedby="comments-description" name="comments" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"/>
           </div>
-          <label for="symfony" class="block w-full text-gray-700 ml-3">Symfony</label>
+          <label for="persoCheck" class="block w-full text-gray-700 ml-3">Projets personnels</label>
         </div>
+
         <div class="relative border border-blue-100 rounded-md flex items-start p-2">
           <div class="flex items-center h-5">
-            <input id="vuejs" aria-describedby="comments-description" name="comments" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"/>
+            <input v-model="proCheck" id="proCheck" value="proCheck" aria-describedby="comments-description" name="comments" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"/>
           </div>
-          <label for="vuejs" class="block w-full text-gray-700 ml-3">Vue JS</label>
+          <label for="proCheck" class="block w-full text-gray-700 ml-3">Projets Professionnels</label>
         </div>
-        <div class="relative border border-blue-100 rounded-md flex items-start p-2">
-          <div class="flex items-center h-5">
-            <input id="classique" aria-describedby="comments-description" name="comments" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"/>
-          </div>
-          <label for="classique" class="block w-full text-gray-700 ml-3">Classique</label>
-        </div>
-        <div class="relative border border-blue-100 rounded-md flex items-start p-2">
-          <div class="flex items-center h-5">
-            <input id="perso" aria-describedby="comments-description" name="perso" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"/>
-          </div>
-          <label for="perso" class="block w-full text-gray-700 ml-3">Projets perso</label>
-        </div>
-        <div class="relative border border-blue-100 rounded-md flex items-start p-2">
-          <div class="flex items-center h-5">
-            <input id="pro" aria-describedby="comments-description" name="pro" type="checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"/>
-          </div>
-          <label for="pro" class="block w-full text-gray-700 ml-3">Projets pro</label>
-        </div>
+
+
         <div class="mt-4 bg-white rounded-md space-y-4 p-4">
           <div class="flex items-center">
             <span class="block bg-secondary h-[5px] w-[35px] rounded-full"></span>
@@ -48,7 +33,7 @@
         </div>
       </div>
       <div class="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 md:col-span-9 lg:grid-cols-3 xl:gap-x-10">
-        <article v-for="projet in projets">
+        <article v-for="projet in allProjets">
           <div class="group relative">
             <div class="w-full min-h-80 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
               <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="w-full h-full object-center object-cover lg:w-full lg:h-full">
@@ -61,8 +46,11 @@
               <a href="#" class="block bg-primary text-white p-1 rounded-md text-sm">Voir le site</a>
             </div>
             <div>
+
+            </div>
+            <div>
               <span v-if="projet.perso" class="block bg-secondary h-[2px] w-[35px]"></span>
-              <span v-else class="block bg-primary h-[2px] w-[15px]"></span>
+              <span v-else class="block bg-primary h-[2px] w-[35px]"></span>
             </div>
           </div>
         </article>
@@ -71,27 +59,81 @@
   </section>
 </template>
 
-<script>
+<script lang="ts">
 import axios from "axios"
+import {Projets} from "../models/Projets";
+import {Tags} from "../models/Tags";
 
 export default {
   name: 'Creations',
 
   data() {
     return {
-      projets: null,
+      tags: [] as Tags[],
+      projets: [] as Projets[],
+      allProjets: [] as Projets[],
+
+      persoCheck: false,
+      proCheck: false
     }
   },
 
-  mounted() {
-    axios
-        .get("http://127.0.0.1:8000/api/projets")
-        .then((response) => {
-          this.projets = response.data['hydra:member'];
-          console.log(this.projets);
-        })
+  watch: {
+    persoCheck() {
+      this.doFilter()
+    },
+
+    proCheck() {
+      this.doFilter()
+    },
+
+    projets() {
+      this.projets = [...this.projets]
+      this.allProjets = this.projets
+    }
+
+  },
+
+  created() {
+    this.getProjets();
+    this.getTags();
+
+  },
+
+  methods: {
+    async getProjets() {
+      axios.get("https://admin.louisbensi.fr/api/projets")
+          .then((response) => {
+            this.projets = response.data['hydra:member'];
+          })
+    },
+
+    async getTags() {
+      axios.get("https://admin.louisbensi.fr/api/tags")
+          .then((response) => {
+            this.tags = response.data['hydra:member'];
+          })
+    },
+
+    doFilter() {
+      if (this.persoCheck && this.proCheck) {
+        return this.allProjets = [...this.projets]
+      } else if (this.persoCheck && !this.proCheck) {
+        this.filterByPerso()
+      } else if (!this.persoCheck && this.proCheck) {
+        this.filterByPro()
+      } else {
+        return this.allProjets = [...this.projets]
+      }
+    },
+
+    filterByPerso() {
+      return this.allProjets = [...this.projets].filter(projet => projet.perso == true)
+    },
+
+    filterByPro() {
+      return this.allProjets = [...this.projets].filter(projet => projet.perso == false)
+    },
   }
-
-
 }
 </script>
