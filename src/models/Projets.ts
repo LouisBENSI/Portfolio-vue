@@ -10,4 +10,8 @@ export interface Projets
     tags: [
         string
     ]
+    categories : [
+        id : number,
+        label : string
+    ]
 }
