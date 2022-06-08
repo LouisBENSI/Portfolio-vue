@@ -141,7 +141,7 @@ export default {
   },
 
   created() {
-    // this.getProjets();
+    this.getProjets();
     this.getTags();
     this.getCategories();
   },
