@@ -106,7 +106,7 @@ export default {
       tags: [] as Tag[],
       categories: [] as Categories[],
       projets: [] as Projets[],
-      allProjets: [] as Projets[],
+      allProjets: [],
 
       loading: true,
 
@@ -147,11 +147,11 @@ export default {
   },
 
   methods: {
-    getProjets() {
+    async getProjets() {
       axios.get("https://admin.louisbensi.fr/api/projets")
           .then((response) => {
             this.projets = response.data['hydra:member'];
-            setTimeout(() => this.loading = false, 800)
+            // setTimeout(() => this.loading = false, 800)
           })
     },
 
@@ -162,7 +162,7 @@ export default {
           })
     },
 
-    getTags() {
+    async getTags() {
       axios.get("https://admin.louisbensi.fr/api/tags")
           .then((response) => {
             this.tags = response.data['hydra:member'];
@@ -182,12 +182,12 @@ export default {
         return this.allProjets = [...this.projets]
       }
 
-      setTimeout(() => this.loading = false, 800)
+      // setTimeout(() => this.loading = false, 800)
     },
 
     filterByCategory() {
       this.loading = true
-      setTimeout(() => this.loading = false, 800)
+      // setTimeout(() => this.loading = false, 800)
       return this.allProjets = this.allProjets.filter(projet => this.categoryFilter.includes(projet.categories.label))
     },
 
