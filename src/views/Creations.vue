@@ -140,18 +140,12 @@ export default {
 
   },
 
-  created() {
-    this.getProjets();
-    this.getTags();
-    this.getCategories();
-  },
-
   methods: {
     async getProjets() {
       axios.get("https://admin.louisbensi.fr/api/projets")
           .then((response) => {
             this.projets = response.data['hydra:member'];
-            // setTimeout(() => this.loading = false, 800)
+            setTimeout(() => this.loading = false, 800)
           })
     },
 
@@ -182,12 +176,12 @@ export default {
         return this.allProjets = [...this.projets]
       }
 
-      // setTimeout(() => this.loading = false, 800)
+      setTimeout(() => this.loading = false, 800)
     },
 
     filterByCategory() {
       this.loading = true
-      // setTimeout(() => this.loading = false, 800)
+      setTimeout(() => this.loading = false, 800)
       return this.allProjets = this.allProjets.filter(projet => this.categoryFilter.includes(projet.categories.label))
     },
 
