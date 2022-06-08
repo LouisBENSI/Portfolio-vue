@@ -5,20 +5,8 @@
     <div class="mt-6 grid md:grid-cols-12 md:gap-x-8">
       <!-- FILTRE -->
       <div class="space-y-4 md:col-span-3">
-<!--        <div class="relative border border-blue-100 rounded-md flex items-start p-2">-->
-<!--          <div class="flex items-center h-5">-->
-<!--            <input v-model="persoCheck" id="persoCheck" value="persoCheck" aria-describedby="comments-description" name="comments" type="checkbox" class="focus:ring-primary h-4 w-4 text-primary border-gray-300 rounded"/>-->
-<!--          </div>-->
-<!--          <label for="persoCheck" class="block w-full text-gray-700 ml-3">Projets personnels</label>-->
-<!--        </div>-->
-<!--        <div class="relative border border-blue-100 rounded-md flex items-start p-2">-->
-<!--          <div class="flex items-center h-5">-->
-<!--            <input v-model="proCheck" id="proCheck" value="proCheck" aria-describedby="comments-description" name="comments" type="checkbox" class="focus:ring-primary h-4 w-4 text-primary border-gray-300 rounded"/>-->
-<!--          </div>-->
-<!--          <label for="proCheck" class="block w-full text-gray-700 ml-3">Projets Professionnels</label>-->
-<!--        </div>-->
 
-        <div v-for="(category, index) in categories" class="relative border border-blue-100 rounded-md flex items-start p-2">
+        <div v-for="category in categories" class="relative border border-blue-100 rounded-md flex items-start p-2">
           <div class="flex items-center h-5">
             <input v-model="categoryFilter" :id="category.label" :value="category.label" aria-describedby="comments-description" name="comments" type="checkbox" class="focus:ring-primary h-4 w-4 text-primary border-gray-300 rounded"/>
           </div>
@@ -50,7 +38,7 @@
         </template>
         <template v-else>
           <!-- PROJETS -->
-          <template v-if="allProjets.length == 0">
+          <template v-if="!allProjets">
             <div class="h-full mt-4 sm:grid-cols-2 md:col-span-9">
               <div class="h-full flex items-center justify-center">
                 <div class="flex items-center bg-secondary text-primary p-6 rounded-lg font-semibold">
@@ -134,16 +122,15 @@ export default {
     },
 
     projets() {
-      this.projets = [...this.projets]
       this.allProjets = this.projets
     }
 
   },
 
   created() {
-    this.getProjets();
     this.getTags();
     this.getCategories();
+    this.getProjets();
   },
 
   methods: {
