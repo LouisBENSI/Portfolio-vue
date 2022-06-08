@@ -143,7 +143,7 @@ export default {
   created() {
     // this.getProjets();
     this.getTags();
-    // this.getCategories();
+    this.getCategories();
   },
 
   methods: {
