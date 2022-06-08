@@ -1,20 +1,20 @@
 <template>
   <section class="md:flex md:items-center">
-    <div class="relative z-20 space-y-6 md:w-7/12">
+    <div class="relative z-20 space-y-4 md:w-7/12 md:space-y-6">
       <h1 class="text-3xl text-secondary font-bold md:text-[45px] lg:font-extrabold">Bonjour !</h1>
       <h2 class="text-2xl font-bold text-primary md:text-[45px] lg:leading-[50px]">Je suis Louis: développeur front-end junior.</h2>
       <p class="font-semibold text-lg">Voilà maintenant 4 belles années que je suis passionné par le domaine du web et en particulier celui du <mark class="bg-secondary">développement front</mark>. Je suis aujourd'hui en <mark class="bg-secondary">CDI</mark> en développement front et en web design chez Bemove. <mark class="bg-secondary">Réaliser</mark> toute sorte de projet, <mark class="bg-secondary">apprendre</mark> de nouveaux langages est ce qui rythme mon quotidien.</p>
       <div class="md:flex md:!mt-16">
-          <router-link to="/Creations" type="button" class="hero_buttons relative flex items-center justify-center bg-primary text-white font-bold overflow-hidden max-w-[320px] h-[40px] w-full mx-auto mt-4 rounded-md md:max-w-[250px] md:mx-0 md:mr-4 lg:max-w-[300px] lg:h-[50px] lg:text-xl lg:mt-0">
+          <router-link to="/Creations" type="button" class="hero_buttons relative flex items-center justify-center bg-primary text-white font-bold overflow-hidden h-[50px] w-full mx-auto mt-4 rounded-md md:max-w-[250px] sm:max-w-[320px] md:h-[40px] md:mx-0 md:mr-4 lg:max-w-[300px] lg:h-[50px] lg:text-xl lg:mt-0">
             <span class="relative z-50">Mes projets</span>
           </router-link>
 
-          <router-link to="/Contact" type="button" class="relative flex items-center justify-center border border-primary text-primary font-bold overflow-hidden max-w-[320px] h-[40px] w-full mx-auto mt-4 rounded-md md:max-w-[250px] md:mx-0 lg:max-w-[300px] lg:h-[50px] lg:text-xl lg:mt-0">
+          <router-link to="/Contact" type="button" class="relative flex items-center justify-center border border-primary text-primary font-bold overflow-hidden h-[50px] w-full mx-auto mt-4 rounded-md sm:max-w-[320px] md:max-w-[250px] md:h-[40px] md:mx-0 lg:max-w-[300px] lg:h-[50px] lg:text-xl lg:mt-0">
             <span class="relative z-50">Me contacter</span>
           </router-link>
       </div>
     </div>
-    <div class="relative z-10 h-full md:w-5/12">
+    <div class="hidden relative z-10 h-full md:w-5/12 md:block">
       <svg class="absolute mx-auto w-full top-[-100px] left-0 lg:relative lg:top-0" viewBox="0 0 348 396" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path opacity="0.48"
               d="M302.232 105.202C292.412 130.381 314.782 160.453 303.129 184.843C293.763 204.392 267.741 209.273 253.439 225.559C236.314 245.069 240.06 275.516 227.457 298.207C214.198 322.048 184.429 334.644 174.944 360.264C172 368.167 170.555 377.808 164 382.688C147.849 380.465 132.334 374.924 118.431 366.415C99.6998 354.849 84.3674 338.616 66.2521 326.1C50.8796 315.47 33.6875 307.607 18.743 296.375C11.8508 291.179 5.56743 285.222 0.0123291 278.618C3.51232 275.955 7.48421 273.977 11.719 272.788C19.923 261.142 30.5224 251.384 42.8071 244.165C55.0918 236.947 68.7782 232.436 82.9492 230.935C97.0641 229.517 111.286 231.175 125.455 232.018C137.737 232.722 150.032 232.825 162.341 232.325C169.525 232.018 177.058 231.389 183.051 227.391C195.614 218.941 195.374 200.367 203.722 187.745C211.161 176.499 224.58 171.097 236.996 165.829C249.412 160.56 262.577 153.861 268.129 141.573C273.226 130.327 270.617 117.237 272.464 105.042C274.029 94.5719 278.846 84.9176 283.582 75.4639C286.325 70.0217 293.563 73.953 299.021 76.654C301.735 78.0542 303.97 80.2299 305.443 82.904C306.915 85.5782 307.558 88.6298 307.29 91.6703C306.741 96.484 303.985 100.696 302.232 105.202Z"
@@ -142,13 +142,13 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #161e27;
-  transition: all 0.6s;
+  background-color: #10161c;
+  transition: all 0.8s;
 }
 
 .hero_buttons:hover::after {
   top: 0;
-  transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.4s;
 }
 
 </style>

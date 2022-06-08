@@ -55,9 +55,9 @@
       </template>
 
       <template v-else>
-        <div class="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 md:col-span-9 lg:grid-cols-3 xl:gap-x-10">
+        <div class="grid grid-cols-1 gap-y-10 gap-x-6 mt-4 sm:grid-cols-2 md:mt-0 md:col-span-9 lg:grid-cols-3 xl:gap-x-10">
           <article v-for="projet in allProjets">
-            <div class="group relative">
+            <div class="group relative shadow-lg p-4 rounded-lg md:p-0 md:shadow-transparent md:rounded-none">
               <div class="w-full min-h-80 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
                 <img :src="'https://admin.louisbensi.fr/uploads/images/' + projet.visuel" alt="Front of men&#039;s Basic Tee in black." class="w-full h-full object-center object-cover lg:w-full lg:h-full">
               </div>

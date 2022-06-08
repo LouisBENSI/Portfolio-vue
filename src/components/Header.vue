@@ -10,7 +10,7 @@
           </svg>
         </div>
       </div>
-      <ul class="navigationHeader absolute bg-white shadow flex flex-col items-end top-0 z-50 left-[-500px] w-8/12 h-screen text-right text-gray-800 pt-4 pr-4 font-semibold space-y-8 z-[999] md:relative md:bg-transparent md:w-auto md:h-full md:flex-row md:items-start md:shadow-transparent md:space-y-0 md:space-x-12 md:left-0 md:p-0">
+      <ul class="navigationHeader absolute bg-white shadow flex flex-col items-end text-xl top-0 z-50 left-[-500px] w-8/12 h-screen text-right text-gray-800 pt-4 pr-4 font-semibold space-y-8 z-[999] md:relative md:bg-transparent md:text-base md:w-auto md:h-full md:flex-row md:items-start md:shadow-transparent md:space-y-0 md:space-x-12 md:left-0 md:p-0">
         <!--CROSS-->
         <svg xmlns="http://www.w3.org/2000/svg" @click="disparitionHeader()" class="absolute top-4 left-4 h-8 w-8 md:hidden" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
