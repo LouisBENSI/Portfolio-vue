@@ -140,6 +140,12 @@ export default {
 
   },
 
+  created() {
+    this.getProjets();
+    // this.getTags();
+    // this.getCategories();
+  },
+
   methods: {
     async getProjets() {
       axios.get("https://admin.louisbensi.fr/api/projets")
