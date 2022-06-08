@@ -95,7 +95,7 @@
 
 import axios from "axios"
 import {Projets} from "../models/Projets";
-import {Tag} from "../models/Tags";
+import {Tag} from "../models/Tag";
 import {Categories} from "../models/Categories";
 
 export default {
