@@ -94,9 +94,9 @@
 <script lang="ts">
 
 import axios from "axios"
-import {Projets} from "../models/Projets";
-import {Tag} from "../models/Tag";
-import {Categories} from "../models/Categories";
+import {Projets} from "../models/Projets.ts";
+import {Tag} from "../models/Tag.ts";
+import {Categories} from "../models/Categories.ts";
 
 export default {
   name: 'Projects',

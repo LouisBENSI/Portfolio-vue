@@ -20,7 +20,7 @@ import {store} from "@emailjs/browser/es/store/store";
 // Routes
 const routes = [
     { path : '/', name : 'Home', component : Home },
-    { path : '/creations', name : 'Creations', component : Creations },
+    { path : '/creations', name : 'Projects', component : Creations },
     { path : '/competences', name : 'Competences', component : Competences },
     { path : '/contact', name : 'Contact', component : Contact },
     { path : '/parcours', name : 'Parcours', component : Parcours },
