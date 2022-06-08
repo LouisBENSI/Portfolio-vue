@@ -92,7 +92,7 @@ import {Tag} from "../models/Tags";
 import {Categories} from "../models/Categories";
 
 export default {
-  name: 'Creations',
+  name: 'Projects',
 
   data() {
     return {
