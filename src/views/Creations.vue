@@ -45,7 +45,7 @@
       <div class="grid grid-cols-1 gap-y-10 gap-x-6 mt-4 sm:grid-cols-2 md:mt-0 md:col-span-9 lg:grid-cols-3 xl:gap-x-8">
         <template v-if="loading">
           <div class="w-full h-full col-span-12 flex items-center justify-center">
-            <img src="src/assets/loader.gif" alt="">
+            <img src="/src/assets/loader.gif" alt="">
           </div>
         </template>
         <template v-else>
