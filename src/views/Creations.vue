@@ -6,15 +6,15 @@
       <!-- FILTRE -->
       <div class="space-y-4 md:col-span-3">
 
-        <div v-for="category in categories" class="relative border border-blue-100 rounded-md flex items-start p-2">
-          <div class="flex items-center h-5">
+        <div v-for="category in categories" class="relative bg-white shadow rounded-md flex items-start p-2 cursor-pointer">
+          <div class="flex items-center h-5 ">
             <input v-model="categoryFilter" :id="category.label" :value="category.label" aria-describedby="comments-description" name="comments" type="checkbox" class="focus:ring-primary h-4 w-4 text-primary border-gray-300 rounded"/>
           </div>
-          <label :for="category.label" class="block w-full text-gray-700 ml-3">{{ category.label }}</label>
+          <label :for="category.label" class="block w-full text-gray-700 ml-3 font-semibold cursor-pointer">{{ category.label }}</label>
         </div>
 
 
-        <div class="flex items-center justify-evenly mt-4 bg-white rounded-md p-4 sm:block sm:space-y-4">
+        <div class="flex items-center justify-evenly mt-4 bg-white rounded-md p-4 shadow sm:block sm:space-y-4">
           <div class="flex items-center">
             <span class="block bg-secondary h-[5px] w-[35px] rounded-full"></span>
             <p class="ml-3 text-sm">Projets Perso</p>
