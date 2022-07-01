@@ -31,28 +31,28 @@ export default {
               company: "Bemove",
               date_start: "Septembre 2021",
               date_fin: "?",
-              description: "Cette signature en CDI est une poursuite des projets menés durant mon alternance, + de responsabilité et une montée en compétence dans le front-end."
+              description: "Cette signature en CDI est une poursuite des projets menés durant mon alternance avec + de responsabilité et une montée en compétence dans le front-end."
             },
             {
               title: "Alternance dévelopement front-end",
               company: "Bemove",
               date_start: "Septembre 2020",
               date_fin: "Septembre 2021",
-              description: "Le stage s'étant bien passé, Bemove a décidé de me prendre en alternance, j'ai pu monté en compétence et en responsabilité malgré le contexte sanitaire."
+              description: "Suite à mon stage, Bemove me prend en alternance, j'ai pu monter encore + en compétences et en responsabilités malgré le contexte sanitaire."
             },
             {
               title: "Stage Intégration HTML/CSS",
               company: "Bemove",
               date_start: "Juin 2020",
               date_fin: "Septembre 2020",
-              description: "Ce deuxième stage dans une PME m'a permis d'intégrer une équipe et un environnement complètement nouveau, j'ai pu faire mes premières armes sur GIT, symfony et Tailwind CSS."
+              description: "Ce deuxième stage chez Bemove m'a permis d'intégrer une équipe et un environnement complètement nouveau, j'ai pu faire mes premières armes sur git, symfony et Tailwind CSS."
             },
             {
               title: "Stage développement FullStack",
               company: "green_e",
               date_start: "Avril 2019",
               date_fin: "Juillet 2019",
-              description: "Mon tout premier et ma première expérience professionnelle ! J'ai pu mené (tout seul) un projet web de A à Z du maquettage au développement web sous PHP, HTML, CSS et SQL."
+              description: "Mon tout premier stage et ma première expérience professionnelle ! J'ai pu mener (tout seul) un projet web de A à Z du maquettage au développement web jusqu'à la mise en production sous PHP, HTML, CSS, Bootstrap et SQL."
             },
           ]
         },
@@ -65,6 +65,13 @@ export default {
               date_start: "Mars 2021",
               date_fin: "Octobre 2021",
               description: "Réalisation d'un site vitrine de concession de voitures de collection sous Symfony 5, Easy Admin 3 et Tailwind css"
+            },
+            {
+              title: "Réalisation du site portfolio de Jade Barbier",
+              company: "Jade Barbier",
+              date_start: "Novembre 2021",
+              date_fin: "Décembre 2021",
+              description: "Mon premier projet sous symfony"
             },
             {
               title: "Refonte graphique du site green_e",
@@ -86,18 +93,18 @@ export default {
           title: "Formations",
           items: [
             {
-              title: "Apprentissage autodidacte",
+              title: "Formation Chef de projet Digital",
               company: "Digital Campus",
               date_start: "Septembre 2018",
               date_fin: "Juillet 2021",
-              description: "Depuis 2020, je consacre mon temps à l'apprentissage de nouvelles technologies liées au front-end et un peu au Back-end pour toujours rester dans les tendances."
+              description: "Depuis 2020, ayant soif de connaissances et toujours dans l'optique d'augmenter mes compétences, je consacre mon temps à apprendre de nouveaux langages dont vueJS par exemple."
             },
             {
-              title: "Formation Chef de projet Digital",
+              title: "Apprentissage autodidacte",
               company: "Udemy",
               date_start: "2021",
               date_fin: "?",
-              description: "Durant ces trois années de Bachelor j'ai appris tous les rouages quant à la conception et le création d'un site web."
+              description: "Durant ce cursus de 3 comprenant 2 stages et une alternance d'un an, j'ai appris et mis en pratique tous les rouages de la conception d'un site web : du recueil de la demande client à la mise en production du site."
             },
 
           ]
