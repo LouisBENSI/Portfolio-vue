@@ -86,18 +86,18 @@ export default {
           title: "Formations",
           items: [
             {
-              title: "Apprentissage autodidacte",
+              title: "Formation Chef de projet Digital",
               company: "Digital Campus",
               date_start: "Septembre 2018",
               date_fin: "Juillet 2021",
-              description: "Depuis 2020, je consacre mon temps à l'apprentissage de nouvelles technologies liées au front-end et un peu au Back-end pour toujours rester dans les tendances."
+              description: "Durant ces trois années de Bachelor j'ai appris tous les rouages quant à la conception et le création d'un site web."
             },
             {
-              title: "Formation Chef de projet Digital",
+              title: "Apprentissage autodidacte",
               company: "Udemy",
               date_start: "2021",
               date_fin: "?",
-              description: "Durant ces trois années de Bachelor j'ai appris tous les rouages quant à la conception et le création d'un site web."
+              description: "Depuis 2021, je consacre mon temps à l'apprentissage de nouvelles technologies liées au front-end et un peu au Back-end pour toujours rester dans les tendances."
             },
 
           ]
