@@ -55,7 +55,7 @@
               <div class="w-full min-h-80 aspect-w-1 aspect-h-1 rounded-md rounded-b-none overflow-hidden lg:h-80 lg:aspect-none">
                 <img :src="'https://admin.louisbensi.fr/uploads/images/' + projet.visuel" alt="Front of men&#039;s Basic Tee in black." class="w-full h-full object-center object-cover lg:w-full lg:h-full">
               </div>
-              <div class="p-4">
+              <div class="p-4 lg:p-0">
                 <div class="mt-4">
                   <h3 class="text-gray-800 font-semibold">
                     {{ projet.name }}
