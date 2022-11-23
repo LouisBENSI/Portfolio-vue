@@ -51,11 +51,11 @@
             </div>
           </template>
           <template v-else>
-            <article v-for="projet in allProjets">
-              <a :href="projet.link" target="_blank" class="group relative shadow-lg p-4 rounded-lg md:p-0 md:shadow-transparent md:rounded-none hover:opacity-80 transition ease-in duration-200">
-                <div class="w-full min-h-80 aspect-w-1 aspect-h-1 rounded-md overflow-hidden lg:h-80 lg:aspect-none">
-                  <img :src="'https://admin.louisbensi.fr/uploads/images/' + projet.visuel" alt="Front of men&#039;s Basic Tee in black." class="w-full h-full object-center object-cover lg:w-full lg:h-full">
-                </div>
+            <a :href="projet.link" v-for="projet in allProjets" target="_blank" class="group relative shadow-lg rounded-lg md:p-0 md:shadow-transparent md:rounded-none hover:opacity-80 transition ease-in duration-200">
+              <div class="w-full min-h-80 aspect-w-1 aspect-h-1 rounded-md rounded-b-none overflow-hidden lg:h-80 lg:aspect-none">
+                <img :src="'https://admin.louisbensi.fr/uploads/images/' + projet.visuel" alt="Front of men&#039;s Basic Tee in black." class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+              </div>
+              <div class="p-4 lg:p-0">
                 <div class="mt-4">
                   <h3 class="text-gray-800 font-semibold dark:text-white">
                     {{ projet.name }}
@@ -70,8 +70,8 @@
                   {{ tag.label }}
                 </span>
                 </div>
-              </a>
-            </article>
+              </div>
+            </a>
           </template>
         </template>
       </div>
