@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <nav class="max-w-[1280px] mx-auto mt-12 py-4">
+    <nav class="max-w-[1280px] mx-auto mt-12 py-4 dark:text-white">
       <ul class="flex flex-col items-center justify-center md:flex-row md:space-x-4">
         <li><p>Tout droits réservés - {{ getDate }}</p></li>
         <li>

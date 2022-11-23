@@ -57,7 +57,7 @@
                   <img :src="'https://admin.louisbensi.fr/uploads/images/' + projet.visuel" alt="Front of men&#039;s Basic Tee in black." class="w-full h-full object-center object-cover lg:w-full lg:h-full">
                 </div>
                 <div class="mt-4">
-                  <h3 class="text-gray-800 font-semibold">
+                  <h3 class="text-gray-800 font-semibold dark:text-white">
                     {{ projet.name }}
                   </h3>
                 </div>
@@ -66,7 +66,7 @@
                   <span v-else class="block bg-primary h-[4px] w-[35px] rounded-lg"></span>
                 </div>
                 <div class="flex flex-wrap justify-start mt-4">
-                <span v-for="tag in projet.tags" class="block bg-secondaryTransparent text-primary px-2 rounded-full text-sm mb-2 mr-3">
+                <span v-for="tag in projet.tags" class="block bg-secondaryTransparent text-primary px-2 rounded-full text-sm mb-2 mr-3 dark:text-white">
                   {{ tag.label }}
                 </span>
                 </div>

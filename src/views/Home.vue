@@ -2,14 +2,14 @@
   <section class="md:flex md:items-center">
     <div class="relative z-20 space-y-4 md:w-7/12 md:space-y-6">
       <h1 class="text-3xl text-secondary font-bold md:text-[45px] lg:font-extrabold">Bonjour !</h1>
-      <h2 class="text-2xl font-bold text-primary md:text-[45px] lg:leading-[50px]">Je suis Louis: développeur front-end junior.</h2>
-      <p class="font-semibold text-lg">Voilà maintenant 4 belles années que je suis passionné par le domaine du web et en particulier celui du <mark class="bg-secondary">développement front</mark>. Je suis aujourd'hui en <mark class="bg-secondary">CDI</mark> en développement front et en web design chez Bemove. <mark class="bg-secondary">Réaliser</mark> toute sorte de projet, <mark class="bg-secondary">apprendre</mark> de nouveaux langages est ce qui rythme mon quotidien.</p>
+      <h2 class="text-2xl font-bold text-primary md:text-[45px] lg:leading-[50px] dark:text-white">Je suis Louis: développeur front-end junior.</h2>
+      <p class="font-semibold text-lg dark:text-white">Voilà maintenant 4 belles années que je suis passionné par le domaine du web et en particulier celui du <mark class="bg-secondary">développement front</mark>. Je suis aujourd'hui en <mark class="bg-secondary">CDI</mark> en développement front et en web design chez Bemove. <mark class="bg-secondary">Réaliser</mark> toute sorte de projet, <mark class="bg-secondary">apprendre</mark> de nouveaux langages est ce qui rythme mon quotidien.</p>
       <div class="md:flex md:!mt-16">
-          <router-link to="/Creations" type="button" class="hero_buttons relative flex items-center justify-center bg-primary text-white font-bold overflow-hidden h-[50px] w-full mx-auto mt-4 rounded-md md:max-w-[250px] sm:max-w-[320px] md:h-[40px] md:mx-0 md:mr-4 lg:max-w-[300px] lg:h-[50px] lg:text-xl lg:mt-0">
+          <router-link to="/Creations" type="button" class="hero_buttons relative flex items-center justify-center bg-primary text-white font-bold overflow-hidden h-[50px] w-full mx-auto mt-4 rounded-md md:max-w-[250px] sm:max-w-[320px] md:h-[40px] md:mx-0 md:mr-4 lg:max-w-[300px] lg:h-[50px] lg:text-xl lg:mt-0 dark:bg-secondary">
             <span class="relative z-50">Mes projets</span>
           </router-link>
 
-          <router-link to="/Contact" type="button" class="relative flex items-center justify-center border border-primary text-primary font-bold overflow-hidden h-[50px] w-full mx-auto mt-4 rounded-md sm:max-w-[320px] md:max-w-[250px] md:h-[40px] md:mx-0 lg:max-w-[300px] lg:h-[50px] lg:text-xl lg:mt-0">
+          <router-link to="/Contact" type="button" class="relative flex items-center justify-center border border-primary text-primary font-bold overflow-hidden h-[50px] w-full mx-auto mt-4 rounded-md sm:max-w-[320px] md:max-w-[250px] md:h-[40px] md:mx-0 lg:max-w-[300px] lg:h-[50px] lg:text-xl lg:mt-0 dark:border-secondary dark:text-secondary">
             <span class="relative z-50">Me contacter</span>
           </router-link>
       </div>
