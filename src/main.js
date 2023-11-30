@@ -7,12 +7,12 @@ import '/src/assets/css/style.css'
 
 // Pages
 import App from './App.vue'
-import Home from "./views/Home.vue"
-import Contact from "./views/Contact.vue"
-import Creations from "./views/Creations.vue"
-import Competences from "./views/Competences.vue"
-import Parcours from "./views/Parcours.vue"
-import MentionsLegales from "./views/Mentions.vue"
+import Home from "./views/home.vue"
+import Contact from "./views/contact.vue"
+import Creations from "./views/creations.vue"
+import Competences from "./views/competences.vue"
+import Parcours from "./views/parcours.vue"
+import MentionsLegales from "./views/mentions.vue"
 
 // Email
 import {store} from "@emailjs/browser/es/store/store";
